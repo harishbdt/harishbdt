@@ -49,3 +49,25 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not Authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let personType = "Employee";
+let authorizedService;
+
+switch (personType) {
+    case "Employee":
+        authorizedService = "Access to Dietary Services";
+        break;
+        case "Enrolled":
+            authorizedService = "Access to Dietary services & one-on-one interaction";
+            break;
+            case "Subscriber":
+                authorizedService = "Partial Access to Dietary Services";
+                break;
+                case "Non-Subscriber":
+                    authorizedService = "Enroll to Access the services";
+                    break;
+                    default:
+                        authorizedService = "Unknown User Type. Please Enroll First!";
+}
+
+console.log("User Authorized Service Message:", authorizedService);
