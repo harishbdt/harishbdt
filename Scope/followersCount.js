@@ -15,5 +15,13 @@ function checkCountValue() {
         alert("Your followers count reached to 10. Congratulations");
     } else if (count === 20) {
         alert("Your followers count reached to 20. Congratulations");
+    } else if (count === 0) {
+        alert("Your followers count is Reset to ZERO");
     }
+}
+
+function resetCount() {
+    count = 0;
+    displayCount();
+    checkCountValue();
 }
